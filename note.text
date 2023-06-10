@@ -1,0 +1,99 @@
+API
+- Antar muka yang berupa kumpulan fungsi
+yang dapat dipanggil  atau dijalankan oleh program lain
+
+- Penerapannya sangat luas
+- bahasa pemrograman
+- Library & Framework
+- Sistem Operasi
+- Web API/Web Service
+  1. SOAP
+  2. REST (REST INI YANG AKAN KITA BAHAS)
+
+
+# WEB API / WEB SERVICE 
+sebuah sistem perangkat lunak yang dibuat
+untuk mendukung interoperabilitas/interaksi antar 2 aplikasi yang berbeda melalui jaringan
+
+
+# yang kita pelajari
+- apa itu REST API?
+- JSON
+    - membuat & mengakses JSON
+- PUBLIC API
+    - simple/complex auth
+- Membuat REST Server
+
+# REST API 
+adalah gaya arsitektural perangkat lunak yang 
+di dalamnya mendifinisikan aturan-aturan
+untuk membuat web Service
+
+# iLUSTRASI REST API pada restoran 
+- API  adalah penghubung
+- REST API adalah aturannya 
+- ada Request dan Response
+- data yang dikirim / diterima berupa JSON
+
+# REST API
+- REpresentasional State Transfer
+- Gaya perancangan / Architectural style
+- Stateless
+- diciptakan by ROY FIelding di disertasi Phd nya / D3 nya
+- hampir selalu menggunakan HTTP
+- Memungkinkan interaksi antar mesin
+
+# URL
+- Alamat dari sebuah resource yang dapat diakses di internet
+- contoh : 
+    - https: //www.facebook.com/index.php
+
+# Rest Client : laptop, hp, cloud, 
+# Rest Server : yang menerima dan mengirimkan API
+
+# ilustrasi 
+pembelian tiket.com air asia
+
+        mengirimkan Request                                     mengirimkan request dan
+        beserta data jika ada                                   mengudata menjadi JSON
+user ---------------------------> server/aplikasi tiket.com -----------------------------> Rest Server (database Air Asia)
+user <--------------------------- server aplikasi tiket .com <---------------------------- Rest Server Air Asia
+        Mengubah respon menjadi                                 Menerima respon berupa JSON
+        HTML                                                    beserta Kode Status
+
+# kode status ketika mengirimkan API
+- 200 = success
+- 404 = Not Found
+- 500 = Server Error
+kode status digunakan agar mesin dapat mengetahui kode statusnya jika berhasil/tidak
+
+
+# HTTP Method / Verbs
+- GET : mengambil data
+- POST : Menambah data
+- PUT : khusus untuk mengubah data
+- DELETE : Menghapus data
+ 
+ note : PUT dan DELETE tidak bisa mengunakan browser
+
+# RESTFULL API
+GET     localhost/ci-app/mahasiswa/
+GET     localhost/ci-app/mahasiswa/12
+POST    localhost/ci-app/mahasiswa/
+DELETE  localhost/ci-app/mahasiswa/3
+PUT     localhost/ci-app/mahasiswa/38
+note : ini disebut endpoints
+
+# Stateless
+- adalah sebuah ketiadaan dalam sebuah state dalam sebuah aplikasi
+- setiap request http dilakukan secara terisolasi
+- server tidak menyimpan state apapun mengenai sesi dari Client
+- setiap request dari client harus berisi semua informasi yang dibutuhkan server, termasuk informasi otentikasi.
+
+# RESTful API 
+- Menggunakan HTTP method yang benar
+- URL / endpointsnya menggunakan kata benda, bukan kata kerja
+- Stateless
+
+# Restful api dan rest api adalah menggunakan rest api dengan benar
+
